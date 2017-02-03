@@ -261,7 +261,7 @@ module.exports = function (grunt) {
       pages: {
         options: {
           remote: 'git@github.com:diraulo/diraulo.github.io.git',
-          branch: 'gh-pages'
+          branch: 'master'
         }
       }
     },
