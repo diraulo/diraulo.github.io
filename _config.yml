@@ -15,7 +15,7 @@ author:
       website: diraulo.me
       email: hello@diraulo.me
       email_txt: hello[at]diraulo[dot]me
-      phone: +27 (0) 12 341 7228
+      phone: +27 (0) 12 343 6007
       mobile: +27 (0) 71 071 5114
     social:
       github: diraulo
@@ -24,17 +24,17 @@ author:
       bitbucket: diraulo
   skills:
     - name: AngularJS
-      level: 60
-    - name: HTML5 & CSS3
       level: 90
+    - name: HTML5 & CSS3
+      level: 80
     - name: Javascript
-      level: 70
+      level: 80
     - name: NodeJS
-      level: 55
+      level: 60
     - name: Ruby
-      level: 65
+      level: 95
     - name: Ruby on Rails
-      level: 50
+      level: 90
   portfolio:
     - name: ASE House4Hack Roadshow
       url: http://aseroadshow.house4hack.co.za/
