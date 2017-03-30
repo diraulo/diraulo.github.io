@@ -252,8 +252,8 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: '../',
-          branch: 'gh-pages',
+          remote: 'git@github.com:diraulo/diraulo.github.io.git',
+          branch: 'master',
           commit: true,
           push: true
         }
