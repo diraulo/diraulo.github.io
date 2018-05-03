@@ -1,17 +1,20 @@
----
-layout: default
-title: Welcome
----
+--- layout: default title: Welcome ---
 <div class="container">
   <div class="col-lg-6 col-lg-offset-3">
     <div class="row w">
       <div class="col-md-4">
-        <img class="img-responsive" src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=800" alt="">
+        <img class="img-responsive" src="https://www.gravatar.com/avatar/{{site.author.email_md5}}?s=800" alt="">
         <ul class="nav nav-tabs nav-stacked" id="myTab">
-          <li class="active"><a href="#about">About</a></li>
-          <li><a href="#profile">Profile</a></li>
+          <li class="active">
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#profile">Profile</a>
+          </li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
 
@@ -23,36 +26,55 @@ title: Welcome
             <h5>{{site.author.bio}}</h5>
             <hr>
             <p>I'm a Web Developer with over 3 years of experience</p>
-            <p>I'm currently helping craft future web developers at <a href="https://craftacademy.co">CraftAcademy</a></p>
-            <p>Over the past few years i've worked on a number of applications using technologies including but not limited to Rails, AngularJS, NodeJS, MongoDB, Sinatra, etc.</p>
-            <p>On my spare time I like to play with Robots, and contribute to open source software projects at <a href="https://agileventures.org">AgileVentures.org</a></p>
+            <p>I'm currently helping craft future web developers at
+              <a href="https://craftacademy.co">CraftAcademy</a>
+            </p>
+            <p>Over the past few years i've worked on a number of applications using technologies including but not limited
+              to Rails, AngularJS, NodeJS, MongoDB, Sinatra, etc.</p>
+            <p>On my spare time I like to play with Robots, and contribute to open source software projects at
+              <a href="https://agileventures.org">AgileVentures.org</a>
+            </p>
             <p class="pull-right sm-1">
               <span class="octicon octicon-code"></span> with
-              <a target="_blank" href="http://jekyllrb.com">Jekyll</a>. Hosted on &nbsp;
+              <a target="_blank" href="https://jekyllrb.com">Jekyll</a>. Hosted on &nbsp;
               <span class="octicon octicon-logo-github"></span>
             </p>
-          </div><!-- tab about -->
+          </div>
+          <!-- tab about -->
 
           <!-- ===== Second Tab - My Profile ===== -->
           <div class="tab-pane" id="profile">
-            <h4><i class="fa fa-briefcase"></i> Job Experience</h4>
+            <h4>
+              <i class="fa fa-briefcase"></i> Job Experience</h4>
             <p class="sm-1">
-              <a href="https://www.craftacademy.co"><grey>CraftAcademy</grey></a> | Nov 2015 - Current<br/>
-              <a href="http://www.microsmart.co.za"><grey>Microsmart</grey></a> | Dec 2013 - Nov 2015<br/>
+              <a href="https://www.craftacademy.co">
+                <grey>CraftAcademy</grey>
+              </a> | Nov 2015 - Current
+              <br/>
+              <a href="http://www.microsmart.co.za">
+                <grey>Microsmart</grey>
+              </a> | Dec 2013 - Nov 2015
+              <br/>
             </p>
 
-            <h4><i class="fa fa-graduation-cap"></i> Education</h4>
+            <h4>
+              <i class="fa fa-graduation-cap"></i> Education</h4>
             <p class="sm-1">
-              <grey>Computer Engineering</grey> | Tshwane University of Technology.<br/>
+              <grey>Computer Engineering</grey> | Tshwane University of Technology.
+              <br/>
             </p>
 
-            <h4><i class="fa fa-trophy"></i> Certifications</h4>
+            <h4>
+              <i class="fa fa-trophy"></i> Certifications</h4>
             <p class="sm-1">
-              <grey>CS169.1x Engineering Software as a Service</grey> | edX.<br/>
-              <grey>An Introduction to Interactive Programming in Python</grey> | Coursera.<br/>
+              <grey>CS169.1x Engineering Software as a Service</grey> | edX.
+              <br/>
+              <grey>An Introduction to Interactive Programming in Python</grey> | Coursera.
+              <br/>
             </p>
 
-            <h4><i class="fa fa-tasks"></i> Skills</h4>
+            <h4>
+              <i class="fa fa-tasks"></i> Skills</h4>
             <div class="row padding-bottom-40">
               {% for skill in site.author.skills %}
               <div class="col-xs-6">
@@ -65,7 +87,8 @@ title: Welcome
               </div>
               {% endfor %}
             </div>
-          </div><!-- Tab Profile -->
+          </div>
+          <!-- Tab Profile -->
 
           <!-- ===== Third Tab ===== -->
           <!-- <div class="tab-pane" id="portfolio">
@@ -95,9 +118,14 @@ title: Welcome
             <div class="row">
               <div class="col-xs-12">
                 <p class="sm text-center">
-                  <i class="fa fa-globe"></i> <a href="http://{{site.author.contact.basic.website}}">{{site.author.contact.basic.website}}</a> <br/>
-                  <i class="fa fa-envelope"></i> <a href="mailto:{{site.author.contact.basic.email}}?subject=Hello%20Raoul">{{site.author.contact.basic.email_txt}}</a> <br/>
-                  <i class="fa fa-phone"></i> {{site.author.contact.basic.phone}} <br/>
+                  <i class="fa fa-globe"></i>
+                  <a href="https://{{site.author.contact.basic.website}}">{{site.author.contact.basic.website}}</a>
+                  <br/>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:{{site.author.contact.basic.email}}?subject=Hello%20Raoul">{{site.author.contact.basic.email_txt}}</a>
+                  <br/>
+                  <i class="fa fa-phone"></i> {{site.author.contact.basic.phone}}
+                  <br/>
                   <i class="fa fa-apple"></i> {{site.author.contact.basic.mobile}}
                 </p>
               </div>
@@ -107,13 +135,24 @@ title: Welcome
             <hr>
             <div class="row">
               <div class="col-xs-12 text-center" id="social">
-                <a href="https://github.com/{{site.author.contact.social.github}}" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://twitter.com/{{site.author.contact.social.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="https://za.linkedin.com/in/{{site.author.contact.social.linkedin}}" target="_blank" ><i class="fa fa-linkedin"></i></a>
-                <a href="https://bitbucket.com/{{site.author.contact.social.bitbucket}}" target="_blank" ><i class="fa fa-bitbucket"></i></a>
-              </div><!-- col-xs-6 -->
-            </div><!-- row -->
-          </div><!-- Tab Contact -->
+                <a href="https://github.com/{{site.author.contact.social.github}}" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="https://twitter.com/{{site.author.contact.social.twitter}}" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://za.linkedin.com/in/{{site.author.contact.social.linkedin}}" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://bitbucket.com/{{site.author.contact.social.bitbucket}}" target="_blank">
+                  <i class="fa fa-bitbucket"></i>
+                </a>
+              </div>
+              <!-- col-xs-6 -->
+            </div>
+            <!-- row -->
+          </div>
+          <!-- Tab Contact -->
         </div>
       </div>
     </div>
